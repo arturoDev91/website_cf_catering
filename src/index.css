@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Caudex:wght@400;700&family=Inter:wght@400;500;600&display=swap');
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Caudex', serif;
+  }
+}
+
+@layer utilities {
+  .text-gold-200 {
+    color: #FFD700;
+  }
+  
+  .font-caudex {
+    font-family: 'Caudex', serif;
+  }
+}
+
+.group:hover .group-hover\:scale-110 {
+  transform: scale(1.1);
+}
+
+.group:hover .group-hover\:opacity-20 {
+  opacity: 0.2;
+}
